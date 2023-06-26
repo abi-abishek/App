@@ -9,7 +9,7 @@
 
     <!-- Bootstrap core CSS -->
 <link href="/app/assets/dist/css/bootstrap.min.css" rel="stylesheet">
-
+<?if(file_exists($_SERVER['DOCUMENT_ROOT']))
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
