@@ -9,8 +9,10 @@
 
     <!-- Bootstrap core CSS -->
 <link href="/app/assets/dist/css/bootstrap.min.css" rel="stylesheet">
-<?if(file_exists($_SERVER['DOCUMENT_ROOT']))
-    <style>
+<?if(file_exists($_SERVER['DOCUMENT_ROOT']."/app/css/".basename($_SERVER['PHP_SELF'], ".php"."css"))){
+<link href="app/css<?=basename($_SERVER['PHP_SELF'], ".php")?>.css"
+<?}?>
+<style>
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
