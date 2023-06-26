@@ -4,29 +4,13 @@
     <meta name="description" content="">
     <meta name="author" content="Abiedits95">
     <meta name="generator" content="Hugo 0.84.0">
-    <title>Electrogram by Abiedits95</title>
-    
+    <title>Login | Electrogram</title>
 
     <!-- Bootstrap core CSS -->
-<link href="/app/assets/dist/css/bootstrap.min.css" rel="stylesheet">
-<?if(file_exists($_SERVER['DOCUMENT_ROOT']."/app/css/".basename($_SERVER['PHP_SELF'], ".php"."css"))){
-<link href="app/css<?=basename($_SERVER['PHP_SELF'], ".php")?>.css"
-<?}?>
-<style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-
+    <link href="/app/assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.0/css/hover-min.css" integrity="sha512-glciccPoOqr5mfDGmlJ3bpbvomZmFK+5dRARpt62nZnlKwaYZSfFpFIgUoD8ujqBw4TmPa/F3TX28OctJzoLfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <?if(file_exists($_SERVER['DOCUMENT_ROOT'].'/app/css/'.basename($_SERVER['PHP_SELF'],".php"))){?>
+    <link href="/app/css/<?=basename($_SERVER['PHP_SELF'],".php")?>
+    <?}?>
     
 </head>
