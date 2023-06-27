@@ -31,14 +31,14 @@ function signup($user, $pass , $email , $phone)
 
      $sql = "INSERT INTO `auth` (`username`, `password`, `email`, `phone`, `blocked`, `active`)
      VALUES ('$user', '$pass', '$email', '$phone', '0', '0');";
-     $result=false;
+     $error=false;
      if ($conn->query($sql) === true) {
-       $result=true;
+       $error=true;
      } else {
-       $result=false;
+       $error=false;
      }
     
      $conn->close();
-     return $result;
+     return $error;
     
 }
