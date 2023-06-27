@@ -13,7 +13,7 @@ function validate_credentials($username, $password){
     }
 }
 
-function signup($username, $password , $email , $phone)
+function signup($user, $pass , $email , $phone)
 {
     $servername = "mysql.selfmade.ninja";
     $username = "abishek";
@@ -30,7 +30,7 @@ function signup($username, $password , $email , $phone)
     }
 
      $sql = "INSERT INTO `auth` (`username`, `password`, `email`, `phone`, `blocked`, `active`)
-     VALUES ('$username', '$password', '$email', '$phone', '0', '0');";
+     VALUES ('$user', '$pass', '$email', '$phone', '0', '0');";
      $result=false;
      if ($conn->query($sql) === true) {
        $result=true;

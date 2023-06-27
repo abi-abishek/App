@@ -17,7 +17,7 @@ include "libs/load.php";
 // print("_COOKIE /n");
 // print_r($_COOKIE);
 
-if(signup("abishek","12345","aabishek@gmail.com","8428420769")){
+if(signup("abishek","12345","abishek@gmail.com","8428420769")){
     echo "success";
 }else{
     echo "Fail";
