@@ -30,7 +30,7 @@ function signup($username, $password , $email , $phone)
     }
 
      $sql = "INSERT INTO `auth` (`username`, `password`, `email`, `phone`, `blocked`, `active`)
-     VALUES ('admin', 'admin', 'admin@gmail.com', '8428420769', '0', '1');";
+     VALUES ('$username', '$password', '$email', '$phone', '0', '0');";
      $result=false;
      if ($conn->query($sql) === true) {
        $result=true;
