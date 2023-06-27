@@ -33,9 +33,9 @@ function signup($user, $pass , $email , $phone)
      VALUES ('$user', '$pass', '$email', '$phone', '0', '0');";
      $error=false;
      if ($conn->query($sql) === true) {
-       $error=true;
-     } else {
        $error=false;
+     } else {
+       $error= $conn->$error;
      }
     
      $conn->close();
