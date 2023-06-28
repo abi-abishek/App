@@ -7,7 +7,7 @@ class Database
     {
         if (Database::$conn == null) {
             $servername = "mysql.selfmade.ninja";
-            $username = "Abi_Abishek";
+            $username = "abishek";
             $password = "Abi12345";
             $dbname = "abishek_db";
         
