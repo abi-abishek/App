@@ -7,9 +7,9 @@ class Database
     {
         if (Database::$conn == null) {
             $servername = "mysql.selfmade.ninja";
-            $username = "sibidharan";
-            $password = "xyjxo8-xefjat-gYnsif";
-            $dbname = "sibidharan_newdb";
+            $username = "Abi_Abishek";
+            $password = "Abi12345";
+            $dbname = "abishek_db";
         
             // Create connection
             $connection = new mysqli($servername, $username, $password, $dbname);

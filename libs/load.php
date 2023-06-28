@@ -1,44 +1,18 @@
 <?php
 
+include_once 'includes/Mic.class.php';
+include_once 'includes/Database.class.php';
+
 function load_template($name)
 {
-    include $_SERVER['DOCUMENT_ROOT']."/app/_templates/$name.php";
+    include $_SERVER['DOCUMENT_ROOT']."/app/_templates/$name.php"; //not consistant.
 }
 
-function validate_credentials($username, $password){
-    if($username == "sudhaya520@gmail.com" and $password == "520"){
+function validate_credentials($username, $password)
+{
+    if ($username == "sibi@selfmade.ninja" and $password == "password") {
         return true;
     } else {
         return false;
     }
-}
-
-function signup($user, $pass , $email , $phone)
-{
-    $servername = "mysql.selfmade.ninja";
-    $username = "abishek";
-    $password = "Abi12345";
-    $dbname = "abishek_db";
-    
-    // Create connection
-    $conn = new mysqli($servername, $username, $password, $dbname);
-    // Check connection
-    if ($conn->connect_error) {
-      die("Connection failed: " . $conn->connect_error);
-    }else{
-        print("Connection Success");
-    }
-
-     $sql = "INSERT INTO `auth` (`username`, `password`, `email`, `phone`, `blocked`, `active`)
-     VALUES ('$user', '$pass', '$email', '$phone', '0', '0');";
-     $error=false;
-     if ($conn->query($sql) === true) {
-       $error=false;
-     } else {
-       $error= $conn->$error;
-     }
-    
-     $conn->close();
-     return $error;
-    
 }
